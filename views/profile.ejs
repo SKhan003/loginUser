@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <nav>
+        <h3>Navbar</h3>
+        <input type="search" name="search" id="" placeholder="Search">
+        <a href="/logout">Logout</a>
+    </nav>
+    <form id="hidden" action="/uploads" method="post" enctype="multipart/form-data">
+        <input id="fileinp"  type="file" name="filename" placeholder="Choose Photo">
+        <input id="fileSub" type="submit">
+      </form>
+    <div id="userProfile">
+        <div id="userProfilePic">
+            <div class="changeImg">
+                <i class="ri-pencil-line"></i>
+            </div>
+            <img src="../images/uploads/<%=user.profileImage%>" alt="">
+        </div>
+        <div id="userAbout">
+            <div class="about">
+                <h3>Username: <%=user.username%></h3>
+                <h4>Email: <%=user.email%></h4> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var changeImage = document.querySelector(".changeImg");
+        var chooseinp = document.querySelector("#fileinp");
+        var hiddenform = document.querySelector("#hidden");
+        changeImage.addEventListener("click",function(){
+            chooseinp.click();
+        })
+        chooseinp.addEventListener("change",function(){
+            hiddenform.submit();
+        })
+    </script>
+</body>
+</html>

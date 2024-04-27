@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <div id="main">
+      <div id="card">
+       <div class="container">
+        <h1>Create Account</h1>
+       <form action="/register" method="post">
+        <input type="text" placeholder="Username" name="username">
+        <input type="email" placeholder="Email" name="email">
+        <input type="password" placeholder="Password" name="password">
+        <button class="submit">Submit</button>
+       </form>
+       <a id="login" href="/">Login</a>
+       </div>
+      </div>
+      <div class="overlay">
+        <div id="loginCard">
+          <img id="profileImage" src="../images/uploads/default.png" alt="">
+          <h1>Login</h1>
+          <form action="/login" method="post">
+            <input type="username" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button class="submit">Submit</button>
+          </form>
+          <h4 id="register" href="/">Create Account</h4>
+        </div>
+      </div>
+    </div>
+    <script>
+      var login = document.querySelector('#login');
+      var register = document.querySelector('#register');
+      login.addEventListener('click',function(){
+        document.querySelector('.overlay').style.display = 'initial';
+      })
+      register.addEventListener('click',function(){
+        document.querySelector('.overlay').style.display = 'none';
+      })
+    </script>
+</body>
+</html>

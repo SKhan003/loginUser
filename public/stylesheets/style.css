@@ -1,0 +1,189 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 183, 255);
+}
+#card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 280px;
+  height: 300px;
+  border: 1px solid #dadada;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #525252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  margin-top: 20px;
+}
+.container h1{
+  font-size: 25px;
+}
+h1{
+  color: #a8a8a8;
+  font-family: gilroy;
+  margin-left:55px;
+  margin-top: -30px;
+}
+input{
+  width: 200px;
+  height: 35px;
+  margin: 5px 50px;
+  border-radius: 100px;
+  padding: 0px 10px;
+  border: none;
+  background-color: #f0f0f0;
+}
+#profileImage{
+  position: absolute;
+  background-color: rgb(221, 85, 85);
+  box-shadow: 2px 2px 10px #525252;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.submit{
+  width: 200px;
+  height: 35px;
+  border-radius: 100px;
+  border: none;
+  margin-left: 50px;
+  margin-top: 5px;
+  cursor: pointer;
+ background-color: rgb(44, 132, 255);
+ color: #fff;
+ font-family: gilroy;
+}
+.overlay{
+  position: absolute;
+  background-color: rgba(6, 106, 212, 0.798);
+  width: 100%;
+  height: 100%;
+}
+#loginCard{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+}
+#loginCard h4{
+  cursor: pointer;
+  font-weight: 300;
+  color: rgb(0, 14, 140);
+  margin-left: 100px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.container a{
+  margin-left: 135px;
+  text-decoration: none;
+}
+#loginCard #profileImage{
+  position: absolute;
+  left: 35%;
+  top: -10%;
+}
+#loginCard h1{
+  margin-top: 20%;
+  margin-left: 110px;  
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: gilroy;
+  box-shadow: 5px 5px 10px #dadada;
+}
+nav input{
+  width: 300px;
+  outline-color: rgb(0, 191, 255);
+}
+nav a{
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(226, 43, 43);
+  font-size: 15px;
+  text-decoration: none;
+}
+#userProfile{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+#userProfilePic{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.changeImg{
+  z-index: 9999;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(31, 31, 255);
+  border-radius: 50%; 
+  bottom: 0%;
+  right: -2%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#userAbout{
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  width: 300px;
+  height: 300px;
+  font-family: gilroy;
+}
+.about h3{
+  font-weight: 400;
+}
+.about h4{
+  font-weight: 500;
+  margin: 5px 0px;
+  color: #525252;
+  font-size: 15px;
+}
+#hidden{
+  display: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
